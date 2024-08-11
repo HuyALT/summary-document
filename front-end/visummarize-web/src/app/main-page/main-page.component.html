@@ -1,0 +1,31 @@
+<div class="main-title">
+    <h2>TÓM TẮT VĂN BẢN TIẾNG VIỆT</h2>
+</div>
+<div class="text-input-label">
+    Nhập văn bản hoặc tải lên file(.docx, .txt)
+</div>
+<div class="text-input-container">
+    <textarea name="text-input" id="text-input" [(ngModel)]="textInput"></textarea>
+</div>
+<div class="upload-btn-wrapper">
+    <button class="btn">Upload a file</button>
+    <input type="file" name="myfile" (change)="onFileSelected($event)"/>
+</div>
+<div class="summarize-btn-wrapper">
+    <button class="summarize-btn" (click)="startsumary()">BẮT ĐẦU TÓM TẮT</button>
+</div>
+<div class="text-input-label">
+    Kết quả tóm tắt
+</div>
+<div class="text-input-container">
+    <textarea name="text-input" id="text-input" [(ngModel)]="textOutput" disabled></textarea>
+</div>
+<br>
+<hr style=" border-top: 1px solid white">
+<footer>
+    <h4>HỌC VIỆN CÔNG NGHỆ VÀ BƯU CHÍNH VIỄN THÔNG CƠ SỞ TẠI TP.HCM</h4>
+    <h5>SINH VIÊN THƯC HIỆN: NGUYỄN THANH HUY</h5>
+    <h5>GIẢNG VIỄN HƯỚNG DẪN: TS. HUỲNH TRỌNG THƯA</h5>
+    <h5>MÃ SỐ SINH VIÊN: N20DCCN106</h5>
+    <h5>LỚP: D20DCCNPM02-N</h5>
+</footer>
